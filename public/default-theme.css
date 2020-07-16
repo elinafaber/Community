@@ -7,6 +7,11 @@
 	-ms-transform: translate(-220px, 0);
 	transform: translate(-220px, 0);
 }
+#commentable-area {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .commentable-section {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -58,7 +63,7 @@
 }
 .side-comment .comments-wrapper {
 	top: -22px;
-	width: 200px;
+	width: 300px;
 	padding-bottom: 120px;
 }
 .side-comment.active .comments-wrapper {

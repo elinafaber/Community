@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../utils/SectionProps';
 import SectionHeader from '../components/sections/partials/SectionHeader';
+import Image from '../components/elements/Image';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -55,18 +56,25 @@ const Testimonial = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
 		  <div id="commentable-container" class="container commentable-container">
 			<div id="commentable-area">
 				<p data-section-id="1" class="commentable-section">
-				This is a section that can be commented on.
-				</p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.				</p>
 				<p data-section-id="2" class="commentable-section">
-				This is a another section that can be commented on.
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
 				</p>
 				<p data-section-id="3" class="commentable-section">
 				This is yet another section that can be commented on.
 				</p>
+				<div>
+					<Image
+					src={require('../assets/images/features-split-image-01.png')}
+					alt="test"
+					width={528}
+					height={396} />
+					<p data-section-id="15" class="commentable-section" style={{fontSize: '0.8em'}}>Das ist eine Bildunterschrift</p>
+				</div>
 			</div>
    		 </div>
 		</div>
